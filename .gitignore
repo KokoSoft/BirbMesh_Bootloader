@@ -38,6 +38,7 @@
 
 # VSCode files
 .vscode/
+.vs/
 
 # Debug files
 *.dSYM/
