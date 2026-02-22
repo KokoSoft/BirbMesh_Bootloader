@@ -43,4 +43,7 @@ void board_init2(void)
     nrf_gpio_pin_write(pin, pins_init_config[i].state);
     nrf_gpio_cfg_output(pin);
   }
+
+  // User button has an RC filter, so wait for the pin to settle
+  NRFX_DELAY_MS(20);
 }
